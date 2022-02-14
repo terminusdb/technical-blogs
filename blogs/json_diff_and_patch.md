@@ -2,55 +2,31 @@
 
 What will the distributed data environment in Web3 look like?
 
-How will we have a distributed network of data stores which allow
-updates and synchronisations?
+How will we have a distributed network of data stores which allow updates and synchronizations?
 
-What is it that allows git to perform distributed operations on text
-so effectively?
+What is it that allows git to perform distributed operations on text so effectively?
 
 Is it possible to do the same for structured data?
 
 ## Web3
 
-These questions are really at the heart of the *distributed* part of
-web3. Web3 has other parts: immutability, cryptographic security,
-etc. But these other elements do not answer how to perform
-updates on distributed data stores.[*](#crdt)
+These questions are really at the heart of the distributed part of web3. Web3 has other parts: immutability, cryptographic security, etc. But these other elements do not answer how to perform updates on distributed data stores.*
 
-In seeking the answer to these questions, I was led to see a rather
-simple tool as foundational: JSON diff and patch.
+In seeking the answer to these questions I was led to see a rather simple tool as foundational: JSON diff and patch.
 
-JSON, because JSON is the structured data format for the web.  This
-will continue to be true for Web3. Everyone uses JSON for just about
-everything in our web architecture. Other formats are going to be
-increasingly used as mere optimisations of JSON. Associative arrays
-have the beauty of (*reasonable*) human readability, combined with
-widespread native support in modern computer programming
-languages. Both computers and humans can read it, what's not to love!
+JSON, because JSON is the structured data format for the web. This will continue to be true for Web3. Everyone uses JSON for just about everything in our web architecture. Other formats are going to be increasingly used as mere optimizations of JSON. Associative arrays have the beauty of (reasonable) human readability, combined with widespread native support in modern computer programming languages. Both computers and humans can read it, what’s not to love!
 
 But what about the diff and patch part?
 
 ## The *use case* for diff and patch
 
-A fundamental tool in git's strategy for distributed management of
-source code is the concept of the *diff* and the *patch*. These
-foundational operations are what make git possible. *diff* is used to
-construct a *patch* which can be applied to an object such that the
-final state *makes sense* for some value of *makes sense*.
+A fundamental tool in git’s strategy for distributed management of source code is the concept of the diff and the patch. These foundational operations are what make git possible. Diff is used to construct a patch that can be applied to an object such that the final state makes sense for some value of makes sense.
 
-The application of patches happens because we want a certain *before*
-state to be lifted to a certain *after* state. The patch doesn't
-specify everything. Only what it expects to be true of the source, and
-what it expects to be true after the update.
+The application of patches happens because we want a certain before state to be lifted to a certain after state. The patch doesn’t specify everything. Only what it expects to be true of the source, and what it expects to be true after the update.
 
-With this it's possible to have distributed updates performed on
-different parts of source text. Collisions result in some remedial
-action being required, but if there are no collisions everything can
-be *merged* to obtain a final state which respects all updates, no
-matter when or where they came from.
+With this, it’s possible to have distributed updates performed on different parts of source text. Collisions result in some remedial action being required, but if there are no collisions everything can be merged to obtain a final state which respects all updates, no matter when or where they came from.
 
-This is what allows git to be fully multi-master, without requiring or
-forcing synchronisation using any complex protocols (like RAFT).
+This is what allows git to be fully multi-master, without requiring or forcing synchronization using any complex protocols (like RAFT).
 
 ## Diff and patch in structured data
 
@@ -77,16 +53,16 @@ online store.
 If Alice opens the object in an application and changes the name of
 the item to "Retro Encabulator Mark II", it should be possible for Bob
 to update the suppliers list simultaneously without either stepping
-on each others toes.
+on each other's toes.
 
-In applications this sort of curation operation is often achieved with
+In applications, this sort of curation operation is often achieved with
 a *lock* on the object. Which means only one person can win. And locks
 are a massive source of pain, not only because you can't achieve
 otherwise perfectly reasonable concurrent operations, but because you
 risk getting stale locks and having to figure out when to release them.
 
 But what if Sally didn't submit her whole object for update, but only
-the part she wanted changed? And Bob did the same?
+the part she wanted to be changed? And Bob did the same?
 
 Now we can perform the updates in three different places, locally for
 Alice, locally for Bob, and then finally at a shared server resource.
@@ -126,7 +102,7 @@ patch:
 
 We have a problem. But we see immediately that the two are in conflict
 and Alice can be asked to resolve the question by surfacing it. In the
-case of data curation this is a perfectly reasonable workflow. And it
+case of data curation, this is a perfectly reasonable workflow. And it
 is this problem of data curation that we can solve with the simplest
 version of JSON diff.
 
@@ -145,9 +121,9 @@ more flexible.
 
 Which of these you want, however, requires *semantic direction* of the
 diff algorithm. While lots of structured diff problems will be solved
-by the simplest algorithm, ultimately we need to have a schema which
+by the simplest algorithm, ultimately we need to have a schema that
 helps to direct the meaning of our diffs. String fields might be best
-line based, word based, or perhaps they must always be atomic (as with
+line-based, word-based, or perhaps they must always be atomic (as with
 identifiers).
 
 ## Patch is simpler than Diff
@@ -156,7 +132,7 @@ Patch is actually the simpler operation. Patch application basically
 just checks that the read state matches, and then substitutes the
 writes.
 
-Diff by contrast has to calculate, and often in practice *guess* a
+Diff, by contrast, has to calculate, and often in practice *guess* a
 good transition from the read state to the write state. The specific
 tuning of the patch provided by a diff is dependent on the needs of
 the application. There are *generic* algorithms that can work decently
@@ -176,12 +152,12 @@ any fully automatic diff.
 
 ## A Complex Patch gives rise to Distributed Transactions
 
-But there are other workflows which might want slightly more flexible
+But there are other workflows that might want a slightly more flexible
 approach to ensuring data integrity. The *before* state is really
 sitting there to specify the *read object model*. It tells us what we
 want to be true when we apply the patch.
 
-With git this might be lines of text. For instance, to change a very
+With git, this might be lines of text. For instance, to change a very
 simple `README.txt` which initially says `hello world` to one that
 says `hello squirrels`, git will produce a patch that looks something
 like the following:
@@ -204,7 +180,7 @@ reasonable granularity for programming languages.
 
 But the before and after don't have to be lines or words. The before
 could be any specification of the read state. For a bank account
-withdraw, we might ask for the before state to be larger than, or
+withdrawal, we might ask for the before state to be larger than, or
 equal to the after state. This would be a nice little transaction for
 ensuring we don't overdraw.
 
@@ -213,7 +189,7 @@ maybe we read a *lot* of values in order to calculate a further value
 in the object, in which case we want to know that *none* of these
 values change.
 
-This approach gives us a kind of read isolation which is *tuned* to
+This approach gives us a kind of read isolation that is *tuned* to
 the use-case we're actually working with. Making patch the unit of
 update gives us just the right granularity for our application, which
 really can't be known in advance.
@@ -238,6 +214,6 @@ the wild. Do let me know!
 data structures - but not for all. Only certain *types* of
 data structures can be updated with these approaches. In addition, many
 updates require human aided review and will never require a
-CRDT. Still others will have *object read model* conditions which can
+CRDT. Still others will have *object read model* conditions that can
 not be specified in a CRDT. Ultimately our databases should support a
 range of distributed datatypes including CRDT.
