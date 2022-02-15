@@ -1,4 +1,4 @@
-# What's the Difference: JSON diff and patch
+# What's the Difference: [JSON diff and patch](https://terminusdb.com/docs/index/json-diff-and-patch)
 
 What will the distributed data environment in Web3 look like?
 
