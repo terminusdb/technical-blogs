@@ -218,12 +218,9 @@ CRDT. Still others will have *object read model* conditions that can
 not be specified in a CRDT. Ultimately our databases should support a
 range of distributed datatypes including CRDT.
 
-## Join Gavin and Cheuk for a developer's view on Diff & Patch
 
-Thursday, February 17th at 3pm (GMT), Cheuk and Gavin will host our Terminators on Tech webinar series. This episode is focused on diff and patch for data, covering topics like why table diff is hard, how diff and patch is different for code and data, and the thought process behind solving the diff and patch data problem.
+---
 
-If you'd like to join, the links are included below. Please get in touch with us if you've got any questions you'd like answering. You can email on [team@terminusdb.com](mailto:team@terminusdb.com).
+If you are interesed in JSON diff & patch, we'll be streaming on Twitch on 17 Feb at 3pm GMT.   
 
 [Twitch.tv/terminusdb](https://www.twitch.tv/terminusdb/schedule?seriesID=aa347532-11f9-40a5-a156-93f6d4c129c8)
-
-[Zoom - Registration with reminders etc](https://us02web.zoom.us/webinar/register/WN_EklYxvT5R5CQ_ulgkEMoyg)
