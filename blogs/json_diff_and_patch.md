@@ -12,7 +12,7 @@ Is it possible to do the same for structured data?
 
 These questions are really at the heart of the distributed part of web3. Web3 has other parts: immutability, cryptographic security, etc. But these other elements do not answer how to perform updates on distributed data stores.*
 
-In seeking the answer to these questions I was led to see a rather simple tool as foundational: JSON diff and patch.
+In seeking the answer to these questions I was led to see a rather simple tool as foundational: [JSON diff and patch](https://terminusdb.com/products/jsondiff/).
 
 JSON, because JSON is the structured data format for the web. This will continue to be true for Web3. Everyone uses JSON for just about everything in our web architecture. Other formats are going to be increasingly used as mere optimizations of JSON. Associative arrays have the beauty of (reasonable) human readability, combined with widespread native support in modern computer programming languages. Both computers and humans can read it, what’s not to love!
 
