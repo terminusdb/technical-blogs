@@ -217,10 +217,3 @@ updates require human aided review and will never require a
 CRDT. Still others will have *object read model* conditions that can
 not be specified in a CRDT. Ultimately our databases should support a
 range of distributed datatypes including CRDT.
-
-
----
-
-If you are interesed in JSON diff & patch, we'll be streaming on Twitch on 17 Feb at 3pm GMT.   
-
-[Twitch.tv/terminusdb](https://www.twitch.tv/terminusdb/schedule?seriesID=aa347532-11f9-40a5-a156-93f6d4c129c8)
