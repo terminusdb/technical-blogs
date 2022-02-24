@@ -53,7 +53,7 @@ reference and a way to ensure that we have referential integrity
 storage data structures such that we can follow these links
 efficiently.
 
-In TerminusDB, we do this using URLs. This borrows from the original
+In [TerminusDB](https://terminusdb.com/), we do this using URLs. This borrows from the original
 concept of the HTML page, which is itself a structured document with
 hyper-links, but one designed for rendering rather than data
 manipulation.
