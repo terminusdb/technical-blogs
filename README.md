@@ -1,7 +1,7 @@
 # Technical Blogs
 *Technical blogs around data collaboration, data management, and building collaborative applications.*
 
-## [What's in a name: : URI Generation and unique names for objects](https://github.com/terminusdb/technical-blogs/blob/main/blogs/whats_in_a_name.md)
+## [What's in a name: URI Generation and unique names for objects](https://github.com/terminusdb/technical-blogs/blob/main/blogs/whats_in_a_name.md)
 *Author:* Gavin Mendel-Gleason
 
 *Date:* Mon, Feb 28, 2022
