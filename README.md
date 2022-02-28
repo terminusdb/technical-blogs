@@ -1,6 +1,14 @@
 # Technical Blogs
 *Technical blogs around data collaboration, data management, and building collaborative applications.*
 
+## [What's in a name: : URI Generation and unique names for objects](https://github.com/terminusdb/technical-blogs/blob/main/blogs/whats_in_a_name.md)
+*Author:* Gavin Mendel-Gleason
+
+*Date:* Mon, Feb 28, 2022
+
+*Description:*
+This article looks at various identifier generation strategies, including: manual, lexical, hash, random, and value hash, and details our experiences and difficulties in our early days of working with RDF and how we have aimed to make identifier generation strategies easier and simpler within TerminusDB. 
+
 ## [What if MongoDB and Neo4j had a baby](./blogs/mongo_neo4j_terminusx.md)
 *Author:* Gavin Mendel-Gleason
 
