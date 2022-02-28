@@ -7,7 +7,7 @@ as simple as possible to work with, based on our experience of the
 difficulties encountered trying to create URIs in RDF.
 
 We're going to look at various identifier generation strategies,
-including: manual, lexical, hash, random, and value hash.
+including manual, lexical, hash, random, and value hash.
 
 But to see why we introduced these choices and strategies, it's useful
 to think a bit about ID references from first principles.
@@ -24,12 +24,12 @@ as opposed to a *Universal Resource Locator*. The distinction revolves
 around whether they should *resolve* to the resource that they
 indicate.
 
-A *URI* *could* be a *URL* but it need not be. A *URI* could stand in
+A *URI* *could* be a *URL* but it need not be. A *URI* could stand-in
 for any sort of resource, physical or logical which we need to have a
 name for. It is, in a sense simply a name that we want to be
 *universal*.
 
-A good example of a URL that is also a URI, are the HTTPS syntax for
+A good example of a URL that is also a URI, is the HTTPS syntax for
 DOI (Digital Object Identifiers) which specify a specific scientific
 paper. For instance, we can talk about the Quantum Tomography paper
 [Measured measurement](https://doi.org/10.1038/nphys1170) with the DOI
@@ -39,11 +39,11 @@ will forward you to the actual resource.
 Another example where we might double up the meaning might be if we
 used the URL `https://en.wikipedia.org/wiki/Albert_Einstein` to refer
 to the person Albert Einstein in our database, but which will resolve
-automatically to an article on wikipedia.
+automatically to an article on Wikipedia.
 
 ## A thing and its Name
 
-However these URIs (or IRIs, for Internationalized Resource Indicator,
+However, these URIs (or IRIs, for Internationalized Resource Indicator,
 if we are being international) do not have to know how to resolve to
 the objects they describe, even if it can be handy for them to do
 so. If data is to move around, records will have to be in different
@@ -52,12 +52,12 @@ data is associated with it, is not possible to do in all cases.
 
 Despite this, it might be nice to dereference a *canonical* version of
 the data, for some notion of canonical. And so some thought should go
-in to how one might usefully make our URIs into URLs as well.
+into how one might usefully make our URIs into URLs as well.
 
 Another aspect of the subtly is the difference between the name of the
 thing and the thing itself. Of course the Albert Einstein URL above is
 not actually yielding us Albert Einstein when we dereference it. It's
-giving us some meta-data about Albert Einstein, since the resource
+giving us some meta-data about Albert Einstein since the resource
 itself is unavailable.
 
 ## Universality
@@ -77,13 +77,13 @@ if you want to have a distributed or decentralized system.
 Naming is hard. Any programmer who has had to come up with a name for
 a variable or function such that his colleagues, (or they themselves
 later) can understand what it does knows this viscerally. When
-multiple people or systems are trying to come up with names which
-agree with eachother, it's even worse.
+multiple people or systems are trying to come up with names that
+agree with each other, it's even worse.
 
 Unfortunately, there is no easy way to avoid this completely. Some
-coordination and governance is required to obtain shared names
-appropriately. For URLs this is addressed with organizations such as
-ICANN, but others who want to mange naming will have to produce their
+coordination and governance are required to obtain shared names
+appropriately. For URLs, this is addressed with organizations such as
+ICANN, but others who want to manage naming will have to produce their
 own approaches.
 
 ## URI Shorthand
@@ -112,21 +112,21 @@ write down its short name as something like `Person/joe`. It's
 expanded name would be something like:
 `https://lib.terminusdb.com/people/Person/joe`.
 
-Using this sort of naming, all TerminusDB objects can be refered to
+Using this sort of naming, all TerminusDB objects can be referred to
 with an unambiguous URI, and we can also dump a TerminusDB database as a
 valid RDF.
 
 ## Keys
 
 Coming up with the right URI for an object is hard. Especially when
-you are generating lots of them programattically. Fortunately, we
+you are generating lots of them programmatically. Fortunately, we
 *can* make things easier. We can use a *key*. Keys are used in
 relational databases to establish the identity of a row, but they are
-generally treated as a constraint on the table. In fact we can use the
-key as a unique name which can always be used to describe an object.
+generally treated as a constraint on the table. In fact, we can use the
+key as a unique name that can always be used to describe an object.
 
 Supposing we already have a unique identifier, such as a social
-security number. In this case we can be assured that a record for an
+security number. In this case, we can be assured that a record for an
 individual person can have a uniquely designated object in our system.
 
 The schema document for a `Person` class might look like this:
@@ -160,7 +160,7 @@ automatically. We could instead submit the following document:
   "name" : "Hilda Schrader Whitcher" }
 ```
 
-This is handy, since we can ignore the process of ID generation
+This is handy since we can ignore the process of ID generation
 entirely. We can submit updates without knowing what the current name
 of a document is, or understanding precisely its strategy for
 generation.
@@ -231,7 +231,7 @@ Keeping the key in the name is a kind of content addressability. And
 in the case of the use of a hash, it is a variety of content
 addressable hashing.
 
-Notably, it does *not* disambguate the entire document. Usually we
+Notably, it does *not* disambiguate the entire document. Usually, we
 understand the *identity* of a thing to outlive its precise data. With fully content addressable hashing, a thing's identity is *precisely*
 the information we have about it.
 
@@ -280,7 +280,7 @@ When generating *events*, we need new identifiers every single
 time. To do that we need to choose *fresh* identifiers which will not
 overlap with identifiers coming from others. In TerminusDB we do this
 with the `Random` key generation strategy. These can be *referred* to
-for update using their name in the same way as others, but when being
+for updates using their name in the same way as others, but when being
 created, they generate a large probabilistically unique hash. The hash
 is *very* large, so collision probabilities are astronomically low and
 can be safely ignored.
@@ -325,7 +325,7 @@ their data. Therefore, we will need to refer to them explicitly by ID
 from now on. This often makes the most sense when we will refer to
 them from other (perhaps more explicitly named) objects.
 
-## Explict Naming
+## Explicit Naming
 
 > “When I use a word,” Humpty Dumpty said in rather a scornful tone,
 > “it means just what I choose it to mean—neither more nor less.”
@@ -337,13 +337,13 @@ self-explanatory and not based on something which can be generated
 from a key.
 
 In this case we just always pass the `@id` around whenever we refer to
-the object, whether inserting, updating or deleting.
+the object, whether inserting, updating, or deleting.
 
 ## Easier is Better
 
 We had a lot of pain trying to generate large RDF graphs when we were
 getting started. The problem of naming, not having a good way to
-recognise already entered objects, no good way of "consing" up a name
+recognize already entered objects, no good way of "consing" up a name
 for something, whether tied to data, or random all caused stumbling
 blocks. A *lot* of special purpose logic went into scripts, where it
 was made to be correct after a lot of tweaking, and then remained
