@@ -1,6 +1,14 @@
 # Technical Blogs
 *Technical blogs around data collaboration, data management, and building collaborative applications.*
 
+## [Mergeable records: A data modeling approach](https://github.com/terminusdb/technical-blogs/blob/main/blogs/mergeable_records.md)
+*Author:* Gavin Mendel-Gleason
+
+*Date:* Fri, Mar 4, 2022
+
+*Description:*
+What happens when you have duplicate records you want to merge? What about when you're sourcing data from the Internet and have conflicting data about something? This article looks at merge problems when you have the data, and explores how you can approach merging records from a data modeling approach. 
+
 ## [What's in a name: URI Generation and unique names for objects](https://github.com/terminusdb/technical-blogs/blob/main/blogs/whats_in_a_name.md)
 *Author:* Gavin Mendel-Gleason
 
