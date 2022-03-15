@@ -1,4 +1,4 @@
-# What's in a Name: URI Generation and Unique names for objects
+# What's in a Name: URI Generation and Unique Names for Objects
 ## Fixing Linked-Data pain-points by bridging RDF and RDBMS id generation
 
 In TerminusDB we have both an automatic and manual means of describing
@@ -41,7 +41,7 @@ used the URL `https://en.wikipedia.org/wiki/Albert_Einstein` to refer
 to the person Albert Einstein in our database, but which will resolve
 automatically to an article on Wikipedia.
 
-## A thing and its Name
+## A Thing and its Name
 
 However, these URIs (or IRIs, for Internationalized Resource Indicator,
 if we are being international) do not have to know how to resolve to
