@@ -1,13 +1,13 @@
 # TerminusDB v10.1.0: The Mule
 
-We have recently release TerminusDB v10.1 which we have labelled The
+We have recently released TerminusDB v10.1 which we have labelled The
 Mule. We have added a number of technical features, and performance
 enhancements, but most of these are all pieces on the way to realising
 our broader vision.
 
 Our aim is to create a distributed database for knowledge graphs. One
 in which you can incrementally grow segments of the graph (data
-products) over many nodes creating individual high quality products
+products) over many nodes creating individual high-quality products
 that are linked at the boundaries (in a manner not entirely unlike how
 object code linking works) and can be shared between the nodes. We
 want a truly distributed, multi-party, scalable knowledge graph
@@ -31,7 +31,7 @@ technical choices which diverge from standard database technology.
   along with the changes they refer to.
 
 * We structure our units as *objects* (with a natural JSON
-  representation) with links (somewhat analogous to web-pages), but we
+  representation) with links (somewhat analogous to webpages), but we
   store and can query everything as a graph.
 
 * Distributed transactions are "slow", and we manage them in a fashion
@@ -103,7 +103,7 @@ refer to each-other.
   "friends" : ?Joe }
 ```
 
-It was possible to use a well chosen document ID naming scheme to avoid
+It was possible to use a well-chosen document ID naming scheme to avoid
 this problem, but it was still awkward. TerminusDB uses a number of
 pre-built ID generation schemes (lexical keys, hash keys, and
 random). And sometimes it was difficult to even calculate what the
@@ -134,7 +134,7 @@ irritating.
 
 So we've added a quite general system of type inference which allows
 the insertion of documents when there is *precisely one* type for a
-document. We might be able to insert a person documents as:
+document. We might be able to insert a person document as:
 
 ```json
 { "name" : "Joe",
