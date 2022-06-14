@@ -187,3 +187,15 @@ federated collections of information conveniently.
 And of course, we want to prioritise what our community thinks is
 important. So if you have ideas for TerminusDB, we're very open to
 suggestions.
+
+## Documentation Links
+
+[Diff](https://terminusdb.com/docs/index/json-diff-and-patch)
+
+[Capture IDs](https://terminusdb.com/docs/index/terminusx-db/reference-guides/document-interface?swcfpc=1#capturing-ids-while-inserting-or-replacing-documents)
+
+[Type Inference](https://terminusdb.com/docs/index/terminusx-db/reference-guides/schema?swcfpc=1#inference)
+
+[Unconstrained JSON](https://terminusdb.com/docs/index/terminusx-db/reference-guides/schema?swcfpc=1#json-type)
+
+[Document UI](https://terminusdb.com/docs/index/terminusx-db/how-to-guides/generate-document-user-interfaces/get-started-with-the-documents-user-interface)
