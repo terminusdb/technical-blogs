@@ -51,8 +51,8 @@ inference, capture ids, document UI, and unconstrained JSON fields.
 
 ## Diff
 
-In order to have the "slow" distributed transactions for strutured documents,
-that allow us to modfiy graphs using rebase, cherry pick, and merge etc, we really need to have a diff
+In order to have the "slow" distributed transactions for structured documents,
+that allow us to modify graphs using rebase, cherry pick, and merge etc, we really need to have a diff
 algorithm. Previously, diffs in TerminusDB were purely a result of
 differences in the set of triples. This was awkward from the point of
 view of object identity, which is more commonly how people think about
@@ -166,7 +166,7 @@ property, or directly as an object.
 ## Document UI
 
 We have built a toolkit which makes it much more convenient to provide
-document curation interfaces. It helps to automatically stucture the
+document curation interfaces. It helps to automatically structure the
 display, editing and submission of documents, including with
 geolocation information.
 
