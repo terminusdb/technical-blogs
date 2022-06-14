@@ -1,6 +1,14 @@
 # Technical Blogs
 *Technical blogs around data collaboration, data management, and building collaborative applications.*
 
+## [TerminusDB 10.1.0 - The Mule]([https://github.com/terminusdb/technical-blogs/blob/main/blogs/mergeable_records.md](https://github.com/terminusdb/technical-blogs/blob/main/blogs/terminusdb-10.1.0-the-mule.md))
+*Author:* Gavin Mendel-Gleason
+
+*Date:* Tue, Jun 14, 2022
+
+*Description:*
+We have recently released TerminusDB v10.1 which we have labeled The Mule. We have added a number of technical features, and performance enhancements, but most of these are all pieces on the way to realising our broader vision.
+
 ## [Mergeable records: A data modeling approach](https://github.com/terminusdb/technical-blogs/blob/main/blogs/mergeable_records.md)
 *Author:* Gavin Mendel-Gleason
 
