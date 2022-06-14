@@ -1,8 +1,8 @@
 # TerminusDB v10.1.0: The Mule
 
-We have recently released TerminusDB v10.1 which we have labelled The
+We have recently released TerminusDB v10.1 which we have labeled The
 Mule. We have added a number of technical features, and performance
-enhancements, but most of these are all pieces on the way to realising
+enhancements, but most of these are all pieces on the way to realizing
 our broader vision.
 
 Our aim is to create a distributed database for knowledge graphs. One
