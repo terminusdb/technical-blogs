@@ -1,6 +1,54 @@
 # Technical Blogs
 *Technical blogs around data collaboration, data management, and building collaborative applications.*
 
+## [TerminusDB Internals - Part 2: Mutating the Immutable](https://terminusdb.com/blog/terminusdb-internals-2/)
+*Author:* Gavin Mendel-Gleason
+
+*Date:* Monday, Nov 14, 2022
+
+*Description:*
+Part 2 of TerminusDB internals looks at how we deal with mutating immutable data by using deltas and rollups.
+
+## [The Solution to The Object Relational Impedance Mismatch](https://terminusdb.com/blog/object-relational-impedance-mismatch/)
+*Author:* Gavin Mendel-Gleason
+
+*Date:* Wednesday, Nov 9, 2022
+
+*Description:*
+Have you run into Object Relational Impedance Mismatch? Gavin wrote this blog talking about his experiences overcoming it.
+
+## [TerminusDB Internals - Part 1: Graph Representation](https://terminusdb.com/blog/terminusdb-internals/)
+*Author:* Gavin Mendel-Gleason
+
+*Date:* Monday, Nov 7, 2022
+
+*Description:*
+Part 1 of a 3-part series looking into the guts of TerminusDB. The first part looks at graph representation and our efforts to make things smaller, faster, and stronger.
+
+## [Implementing GraphQL in 14 Days](https://terminusdb.com/blog/implement-graphql-in-fourteen-days/)
+*Author:* Gavin Mendel-Gleason
+
+*Date:* Friday, Oct 28, 2022
+
+*Description:*
+This article describes how Gavin and Matthijs worked for 14 days to implement GraphQL into TerminusDB using the Juniper library.
+
+## [GraphQL RDF Bridge using Star Wars Dataset in TerminusDB](https://terminusdb.com/blog/graphql-rdf-bridge-using-star-wars-dataset/)
+*Author:* Gavin Mendel-Gleason
+
+*Date:* Friday, Oct 14, 2022
+
+*Description:*
+A tutorial blog using a Star Wars RDF dataset, importing it into TerminusDB and querying the data using GraphQL.
+
+## [The Semantic Web Is Dead! Long Live the Semantic Web](https://terminusdb.com/blog/the-semantic-web-is-dead/)
+*Author:* Gavin Mendel-Gleason
+
+*Date:* Friday, Aug 12, 2022
+
+*Description:*
+Following some Twitter 'discussions', this blog looks at the semantic web and why it failed. It also looks at how it could be resurrected.
+
 ## [The issue of blank nodes in RDF](https://github.com/terminusdb/technical-blogs/blob/main/blogs/blank_nodes_in_rdf.md)
 *Author:* Somethingelseentirely - *Discord community member*
 
