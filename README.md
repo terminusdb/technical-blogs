@@ -1,7 +1,7 @@
 # Technical Blogs
 *Technical blogs around data collaboration, data management, and building collaborative applications.*
 
-## [Schema Migration](https://github.com/terminusdb/technical-blogs/blob/main/blogs/schema-migration.md)
+## [Schema Migration](https://github.com/terminusdb/technical-blogs/blob/main/blogs/schema_migration.md)
 *Author:* Gavin Mendel-Gleason
 
 *Date:* Monday, Apr 24, 2023
