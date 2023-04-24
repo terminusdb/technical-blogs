@@ -1,6 +1,30 @@
 # Technical Blogs
 *Technical blogs around data collaboration, data management, and building collaborative applications.*
 
+## [Schema Migration](https://github.com/terminusdb/technical-blogs/blob/main/blogs/schema-migration.md)
+*Author:* Gavin Mendel-Gleason
+
+*Date:* Monday, Apr 24, 2023
+
+*Description:*
+An article talking about change management for data and how we deal with managing changes to the data model.
+
+## [The Conent Revolution](https://terminusdb.com/blog/content-revolution/)
+*Author:* Gavin Mendel-Gleason
+
+*Date:* Wednesday, Feb 15, 2023
+
+*Description:*
+A look at TerminusCMS from a technical perspective and how we're trying to address what's missing in today's document management solutions.
+
+## [TerminusDB Internals - Part 3: Sorting Every Sort of Thing](https://terminusdb.com/blog/terminusdb-internals-3/)
+*Author:* Gavin Mendel-Gleason
+
+*Date:* Tuesday, Nov 22, 2022
+
+*Description:*
+Part 3 and final part of TerminusDB internals. This one looks at how we deal with lexical sorting with things that aren't designed to be sorted logically.
+
 ## [TerminusDB Internals - Part 2: Mutating the Immutable](https://terminusdb.com/blog/terminusdb-internals-2/)
 *Author:* Gavin Mendel-Gleason
 
