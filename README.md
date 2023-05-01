@@ -9,7 +9,7 @@
 *Description:*
 An article talking about change management for data and how we deal with managing changes to the data model.
 
-## [The Conent Revolution](https://terminusdb.com/blog/content-revolution/)
+## [The Content Revolution](https://terminusdb.com/blog/content-revolution/)
 *Author:* Gavin Mendel-Gleason
 
 *Date:* Wednesday, Feb 15, 2023
