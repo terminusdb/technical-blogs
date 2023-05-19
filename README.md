@@ -1,6 +1,14 @@
 # Technical Blogs
 *Technical blogs around data collaboration, data management, and building collaborative applications.*
 
+## [Writing a Vector Database in a Week in Rust](https://github.com/terminusdb/technical-blogs/blob/main/blogs/writing-a-vector-database-in-rust.md)
+*Author:* Gavin Mendel-Gleason
+
+*Date:* Monday, May 22, 2023
+
+*Description:*
+Vector databases are all the rage at the moment and it's not just hype. The advance of AI, which is making use of vector embeddings, has significantly increased the buzz. This article talks about how we implemented a vector database in Rust in a week to give us semantic indexing and entity resolution using OpenAI to define our embeddings.
+
 ## [Schema Migration](https://github.com/terminusdb/technical-blogs/blob/main/blogs/schema_migration.md)
 *Author:* Gavin Mendel-Gleason
 
