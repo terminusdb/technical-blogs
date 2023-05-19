@@ -154,4 +154,4 @@ We have also added endpoints to find neighboring documents and to find duplicate
 
 While there are really great vector databases out there in the wild, such as Pinecone, we want to have a sidecar that integrates well with TerminusDB and which can be used for less technical users who care about content primarily and are not going to be spinning up their own vector database.
 
-We are really excited about the potential of this and we will release all of the code open source after we clean it up a little so we’re not too embarrassed by some of the error handling :D (again, only so much can be done in a week!)
+We are really excited about the potential of this [VectorLink](https://github.com/terminusdb-labs/terminusdb-semantic-indexer), and would love people to have a look at what we have so far! Please forgive us a bit for the relatively sparse error handling. We're working furiously on it!
